@@ -134,7 +134,6 @@ Output:
 {
     "access": "....."
 }
-
 ```
 \* Currently the refresh token lasts for 1 hour
 
