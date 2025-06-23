@@ -36,7 +36,7 @@ This system is designed for a digital library where:
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/1ayushp/library-management.git
+   git clone https://github.com/1ayushp/Library-Mgnt-System.git
    ```
 2. **Create virtual env and activate it**
    ```
@@ -67,14 +67,14 @@ This will populate the database with
 
 ---
 ## Running the Server
-    ```
-    python manage.py runserver
-    ```
+```
+python manage.py runserver
+```
 ### Server will be available at:
 
-    ```
-    http://127.0.0.1:8000/
-    ```
+```
+http://127.0.0.1:8000/
+```
 ---
 ## Accessing the api
 The api can be access through `http://127.0.0.1:8000/api/`
@@ -209,6 +209,6 @@ Currently there are a few limitations in the project
 
 ## Author
 
-**Ayush Parajuli**
+#### Ayush Parajuli
 
-*(Task for Backend Developer)*
+###### *(Task for BRP Group-Backend Developer)*
