@@ -159,22 +159,26 @@ Output:
 
 \* Librarians can only interact users with role member and cannot make modifications to admin or other librarians
 
+_(Passwords cannot be accessed though api)_
+
 ## Summary
 
 | Action               | Admin           | Librarian                           | Member  |
 | -------------------- |:---------------:|:-----------------------------------:|:-------:|
-| View yourself        |     YES         | YES                                 | YES      |
+| Access admin panel   |     YES         | NO                                  | NO      |
+| All models in admin panel|     (Only superuser)         | NO                 | NO      |
+| View yourself        |     YES         | YES                                 | YES     |
 | View users           |     YES         | YES                                 | NO      |
-| Create users         |  YES (any role) | YES (only `member`, `librarian`)    | NO      |
-| Update users         |  YES (any user) | YES (only `member`, limited fields) | NO      |
+| Create users         |  YES            | YES                                 | NO      |
+| Update users         |  YES            | (only `member`, limited fields)     | NO      |
 | Change role to admin |      YES        | NO                                  | NO      |
-| Delete users         |      YES        | YES (only `member`)                 | NO      |
+| Delete users         |      YES        | (only `member`)                     | NO      |
 | View books           |      YES        | YES                                 | YES     |
 | Create books         |      YES        | YES                                 | NO      |
-| Update books         |      YES        | YES                                 | NO      |
-| Delete books         |      YES        | YES                                 | NO      |
+| Modify books         |      YES        | YES                                 | NO      |
 
-**Notes on Librarian Restrictions**
+
+**Few Notes on Librarian Restrictions**
   
   - Librarians cannot assign the admin role.
   - Librarians can only update users with role member, and cannot change roles to admin.
@@ -195,7 +199,7 @@ SQLite (can be switched to MySQL/Snowflake/MongoDB/)
 ## Limitaions
 Currently there are a few limitations in the project
 - Lack of Frontend Interface
-    - This project only provides API endpoints. There is no web or mobile UI, so tools like Postman or cURL are needed to interact with the system.
+    - This project only provides API endpoints. There is no web or mobile UI, so tools like Postman is needed to interact with the system.
 
 - No Rate Limiting or Throttling
     - APIs are open to repeated access and can be abused
