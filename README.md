@@ -210,4 +210,4 @@ Currently there are a few limitations in the project
 
 #### Ayush Parajuli
 
-###### *(Task for BRP Group-Backend Developer)*
+###### *(Task for BRP Group (Assabet Technologies)-Backend Developer)*
