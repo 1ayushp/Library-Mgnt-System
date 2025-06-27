@@ -213,5 +213,3 @@ Currently there are a few limitations in the project
 ## Author
 
 #### Ayush Parajuli
-
-###### *(Task for BRP Group (Assabet Technologies)-Backend Developer)*
